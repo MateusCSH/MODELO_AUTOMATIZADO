@@ -14,6 +14,7 @@ from MODELOaux import repetição
 
 
 
+
 ctk.set_appearance_mode('dark')
 ctk.set_default_color_theme('blue')
 
@@ -53,11 +54,12 @@ class ap(ctk.CTk):
                 confirmar = 'SIM'
                 while(confirmar == 'SIM'):
                     typemes = pyautogui.confirm(text='ESCOLHA O MÊS', title='CEM AUTOMATION', buttons=['JAN','FEV','MARÇO','ABRIL','MAIO','JUN'])
+                    time.sleep(2)
 
                     if typemes == 'JAN':
 
                         pyautogui.hotkey('alt','tab')
-                        click_mes = pyautogui.locateCenterOnScreen('OUTUBRO.png', confidence=0.7)
+                        click_mes = pyautogui.locateCenterOnScreen('JANEIRO.png', confidence=0.7)
                         pyautogui.click(click_mes.x, click_mes.y)
 
                         filepath = filedialog.askopenfilename(filetypes=[("CSV files",'*.csv')]) 
@@ -74,19 +76,19 @@ class ap(ctk.CTk):
 
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
@@ -96,8 +98,10 @@ class ap(ctk.CTk):
                     if typemes == 'FEV':
 
                         pyautogui.hotkey('alt','tab')
+                        time.sleep(1.5)
                         click_mes = pyautogui.locateCenterOnScreen('FEVEREIRO.png', confidence=0.7)
                         pyautogui.click(click_mes.x, click_mes.y)
+                        
 
                         filepath = filedialog.askopenfilename(filetypes=[("CSV files",'*.csv')]) 
 
@@ -110,22 +114,22 @@ class ap(ctk.CTk):
                                 semana = pyautogui.confirm(text='ESCOLHA A SEMANA', title='SEMANA', buttons=['S1', 'S2', 'S3','S4'])
                                 time.sleep(1.5)
                                 pyautogui.hotkey('alt','tab')
-                                
+                                time.sleep(1.5)
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
@@ -133,7 +137,7 @@ class ap(ctk.CTk):
                     if typemes == 'MARÇO':
 
                         pyautogui.hotkey('alt','tab')
-                        click_mes = pyautogui.locateCenterOnScreen('MARC.png', confidence=0.7)
+                        click_mes = pyautogui.locateCenterOnScreen('MARC.png', confidence=0.8)
                         pyautogui.click(click_mes.x, click_mes.y)
 
                         filepath = filedialog.askopenfilename(filetypes=[("CSV files",'*.csv')]) 
@@ -150,19 +154,19 @@ class ap(ctk.CTk):
                                 
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
@@ -189,19 +193,19 @@ class ap(ctk.CTk):
                                 
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
@@ -226,19 +230,19 @@ class ap(ctk.CTk):
                                 
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
@@ -263,19 +267,19 @@ class ap(ctk.CTk):
                                 
 
                                 if semana == 'S1':
-                                    click_nome = pyautogui.locateCenterOnScreen('quatro.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T1.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S2':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S2.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T2.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
 
                                 if semana == 'S3':
-                                    click_nome = pyautogui.locateCenterOnScreen('ABRIL_S3.png', confidence=0.7)
+                                    click_nome = pyautogui.locateCenterOnScreen('T3.png', confidence=0.7)
                                     repetição(df, click_nome)
 
 
